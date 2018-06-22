@@ -75,4 +75,15 @@ Execution time: 17 896 ms.
 
 ### Démarrage
 
+Demarrer l'application avec la commande suivante.
+``` bash
+php artisan serve
+```
 ### Connexion
+
+Lancer le navigateur |`127.0.0.1:8000` si vous êtes en local ou `adresse_ip:8000`
+Entrer les identifiants ce dessus.
+
+## Usage
+
+Utiliser le commentaire du code.
