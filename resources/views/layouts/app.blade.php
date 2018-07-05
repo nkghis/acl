@@ -19,6 +19,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- My own Styles -->
+    <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet">
+
     <!-- Favicon -->
    {{-- <link rel="shortcut icon" type="image/x-icon" href="{{asset('/img/logo48.ico')}}" />--}}
 
@@ -113,6 +116,15 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <!-- Footer -->
+        <div class="row justify-content-center">
+            <footer class="row">
+                @include('layouts.footer')
+            </footer>
+        </div>
+        <!-- End Footer -->
+
     </div>
 
     <!-- Scripts -->

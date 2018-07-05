@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Editer Utilisateur ' . $user->first_name)
+@section('title', 'Editer Utilisateur ' . $user->name)
 
 @section('content')
     <div class="container">
@@ -9,11 +9,11 @@
             <div class="card-header">
                 <div class="row">
                     <div class="col-md-8">
-                        <h3>Editer {{ $user->first_name }}</h3>
+                        <h3><span class="badge badge-info">Editer</span> <span class="badge badge-secondary"> {{ $user->name }}</span></h3>
                     </div>
 
                     <div class="col-md-4 page-action text-right">
-                        <a href="{{ route('users.index') }}" class="btn btn-default btn-sm"> <i class="fa fa-arrow-left"></i> Back</a>
+                        <a href="{{ route('users.index') }}" class="btn btn-default btn-sm"> <i class="material-icons">backspace</i> Retour</a>
                     </div>
                 </div>
             </div>

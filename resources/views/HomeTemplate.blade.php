@@ -90,38 +90,6 @@
     <script type="text/javascript">
         $(document).ready(function(){
 
-            /* Select2 autocompleted source server route. if you want to use select2 uncomment line below and change route name 'artistes.atcartiste'*/
-
-            {{--src = "{{ route('artistes.atcartiste') }}";--}}
-
-
-
-            /* Select2 autocompleted Script. if you want to use select2 uncomment method block and change part below :
-            * 'artiste' to select input id
-            * placeholder
-            * text : item.data_file_name
-            * id   : item.data_id
-            * */
-            /*$("#artiste").select2({
-                placeholder: 'Selectionner un artiste',
-                ajax: {
-                    url: src,
-                    dataType: 'json',
-                    delay: 250,
-                    processResults: function (data) {
-                        return {
-                            results:  $.map(data, function (item) {
-                                return {
-                                    text: item.nom,
-                                    id: item.id
-                                }
-                            })
-                        };
-                    },
-                    cache: true
-                }
-            });*/
-
            /* Change 'index-ticket' by id of table*/
             $('#index-ticket').DataTable({
                 language: {
